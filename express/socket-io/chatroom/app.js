@@ -56,7 +56,7 @@ io.on('connection', function(socket) {
     });
 
     socket.on('chat', function(msg) {
-        mongo.connect(process.env.CUSTOMCONNSTR_MONGOLAB_URI, function(err, db) {
+        mongo.connect(process.env.CUSTOMCONNSTR_MOGOLAB_URI, function(err, db) {
             if(err) {
                console.warn(err.message);
 	    } else {
